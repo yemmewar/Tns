@@ -2,7 +2,7 @@ package com.tns.dayfour.privateconstructor;
 
 public class MyClass {
 	
-	MyClass obj1 = new MyClass(); // early initialization
+	//MyClass obj1 = new MyClass(); // early initialization
 	
 	private MyClass() {
 		System.out.println("MyClass object is created");
@@ -15,7 +15,7 @@ public class MyClass {
 	
 	public static MyClass getobject() {
 		if(obj ==null) {
-			obj = new MyClass();
+			obj = new MyClass();   //lazy instantiation
 		}
 		return obj;
 	}
