@@ -14,13 +14,19 @@ public class HiraDemo {
 		
 		Person p1;
 		p1 = new Person("rahul", "pune", 24);
-		System.out.println(p1);
+		if(p1 instanceof Student) {
+			System.out.println(p1);
+		}
+		
 		
 //		p1 = new Student("muskan","nagpur", 22, 102," IT", "GHRCEM");
 //		System.out.println(p1);
 		
 		p1 = new Employe("Aakash", "Delhi", 23, 1234, "info", "Developer", 5000);
-		System.out.println(p1);
+		if(p1 instanceof Employe) {
+			System.out.println(p1);
+		}
+		
 
 	}
 	
